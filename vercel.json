@@ -2,17 +2,9 @@
   "functions": {
     "api/index.js": {
       "maxDuration": 15
-    },
-    "api/index.php": {
-      "runtime": "@vercel/php",
-      "maxDuration": 15
     }
   },
   "routes": [
-    {
-      "src": "/api/php",
-      "dest": "/api/index.php"
-    },
     {
       "src": "/api/(.*)",
       "dest": "/api/index.js"
